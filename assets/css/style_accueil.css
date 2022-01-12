@@ -1,0 +1,452 @@
+@import url(https://fr.allfont.net/allfont.css?fonts=haettenschweiler);
+
+body {
+    background-color: #EFE6DD;
+    margin: 0px;
+}
+
+/* Contenu */
+
+.infobar {
+    background-color: #231F20;
+}
+
+.text {
+    font-family: 'Haettenschweiler', arial;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#logoFB {
+    width: 2em;
+    color: white;
+    margin-top: 0.1em;
+}
+
+#logoTwitter {
+    margin-top: 0.2em;
+    width: 1em;
+}
+
+p{
+    margin: 0;
+}
+
+#manu1 {
+    width: 100%;
+    height: auto;
+    border: solid black 5px;
+}
+
+#logo1 {
+    height: auto;
+    width: 14rem;
+    padding-left: 4rem;
+    padding-top: 2rem;
+}
+
+#infos {
+    color: #BF5F4F;
+    margin-left: 2rem;
+    margin-top: 4.5rem;
+}
+
+#pc1 {
+    width: 10rem;
+    height: auto;
+}
+
+#console1 {
+    width: 12rem;
+    height: auto;
+}
+
+#tel1 {
+    width: 6rem;
+    height: auto;
+}
+
+#titre {
+    color: #BF5F4F;
+    padding-top: 3rem;
+    font-family: 'Haettenschweiler', arial;
+}
+
+#paragraphe {
+    position: relative;
+    top: -2rem;
+    font-size: 2rem;
+    font-family: 'Haettenschweiler', arial;
+}
+
+@media screen and (max-width: 959px) {
+    #titre, #paragraphe{
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .row-first{
+        margin-left: 5%;
+    }
+    .container-fluid{
+        margin-left: 5%;
+    }
+    #manu1{
+        border-radius: 0 0 0 2vw;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 959px){
+    .row-first{
+        margin-left: 20%;
+    }
+    .container-fluid{
+        margin-left: 20%;
+    }
+}
+
+/* Fin Contenu */
+
+/*Modal Connexion*/
+
+.modal-content.connexion {
+    min-width: 75%;
+}
+
+.modal-header h2 {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0px;
+}
+
+#btnLogin {
+    background-color: #BB4430;
+    width: 80%;
+    border: none;
+    font-size: 1.5rem;
+}
+
+/*Fin Modal Connexion*/
+
+.closeModal{
+    display: flex;
+    justify-content: end;
+}
+
+.btn-close{
+    margin: 0.5em;
+}
+
+.modal-header{
+    padding-top: 0;
+}
+
+/* Modal Réservation */
+
+.modal-content.register {
+    min-width: 75%;
+}
+
+.modal-title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.imgRegister {
+    width: 20%;
+    height: 80%;
+}
+
+.bottomText{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.choicePlace{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box:hover {
+    background-color: #bfb;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    opacity: 0;
+    width: 0;
+    margin: 0;
+}
+
+input[type="radio"]+label {
+    display: inline-block;
+    margin-left: 0.1em;
+}
+
+input[type="radio"]:checked+label {
+    background-color: #4fdd79;
+    border-color: #4c4;
+    transform: scale(1.2);
+
+}
+
+.box {
+    background-color: gray;
+    width: 9%;
+    height: 50px;
+    margin-bottom: 0.5%;
+    border-radius: 5%;
+}
+
+#submit {
+    width: 80%;
+    border: none;
+    background-color: #BB4430;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+
+/* Fin Modal Réservation */
+
+/* ---Section Navbar--- */
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+ul {
+    margin-top: 15.625em;
+    margin-left: 8.75em;
+    position: absolute;
+    list-style-type: none;
+    opacity: 0;
+    transition: 0.9s;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#informations:hover,
+#reservation:hover {
+    text-shadow: 3px 3px 10px rgba(150, 150, 150, 1);
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.togglerSidebar {
+    margin-left: 3.2em;
+    margin-top: 0.938em;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    transition: 0.5s;
+    width: 3em;
+    height: 3em;
+    opacity: 0;
+}
+
+
+.sidebar {
+    height: 100vh;
+    width: 25em;
+    background: #231F20;
+    position: fixed;
+    left: -18.75em;
+    transition: 0.5s;
+    z-index: 0;
+    box-shadow: 11px 0px 28px 2px rgba(0, 0, 0, 0.59);
+}
+
+.sidebar li {
+    margin-bottom: 3.438em;
+}
+
+.navBarMenu {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.2em;
+}
+
+
+
+.togglerSidebar:checked+.sidebar {
+    left: -10.625em;
+}
+
+.togglerSidebar:checked+.sidebar>.navList>ul {
+    opacity: 1;
+}
+
+.togglerSidebar:checked {
+    margin-left: 12.625em;
+    margin-top: 0.938em;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    transition: 0.5s;
+}
+
+label {
+    font-size: 1.25em;
+    color: white;
+}
+
+#mainpage {
+    color: #BB4430;
+}
+
+
+
+.burgerMenu,
+.burgerMenu::before,
+.burgerMenu::after {
+    display: block;
+    background: #BB4430;
+    width: 2.5em;
+    height: 0.25em;
+    position: absolute;
+    margin: 1.3em 3em;
+    transition: 0.5s;
+}
+
+.burgerMenu::before,
+.burgerMenu::after {
+    position: absolute;
+    content: '';
+    margin: -0.7em 0 0;
+    transition: width 0.7s ease 0.3s, transform 0.4s ease 0.3s;
+}
+
+.burgerMenu::after {
+    margin-top: 0.7em;
+}
+
+.burgerMenu {
+    position: absolute;
+    margin-left: 7.688em;
+    margin-top: 1.938em;
+    display: block;
+    transition: width 0.3s ease;
+    left: 13.75em;
+}
+
+.togglerSidebar:checked+.sidebar .burgerMenu {
+    width: 2em;
+    transition: width 0.3s ease 0.4s;
+}
+
+.togglerSidebar:checked+.sidebar .burgerMenu::before {
+    width: 1.2em;
+    transform: rotate(-35deg);
+    margin-top: -0.4em;
+}
+
+.togglerSidebar:checked+.sidebar .burgerMenu::after {
+    width: 1.2em;
+    transform: rotate(35deg);
+    margin-top: 0.4em;
+}
+
+/* Navbar responsive */
+
+@media only screen and (max-width: 576px)  {
+    .sidebar {
+        height: 7vh; /* hauteur de la sidebar noire ( sans la liste ) */
+        width: 0em; /* largeur de la sidebar noire ( sans les élèments ) */
+        background: #231F20; /* couleur de la sidebar */
+        position: fixed;
+          /* position de la sidebar noire lors de sa fermeture */
+        transition: 0.5s;
+        z-index: 0;
+    }
+    
+    ul {
+        margin-top: 0em;  /* Marge du haut de la liste Accueil informations reservation */
+        margin-left: 8.75em; /* Marge à gauche de la liste Accueil ... */
+        position: absolute;
+        list-style-type: none;
+        opacity: 0;
+        transition: 0.9s;
+        height: 100vh;
+        background-color: #231F20;
+        box-shadow: 11px 0px 28px 2px rgba(0, 0, 0, 0.59)
+    }
+
+    .sidebar li {
+        margin-bottom: 2em; /* espacement entre : accueil/ informations/ réservation */
+    }
+
+    li:first-child {
+        margin-top:5em ;
+    }
+    
+    .burgerMenu {
+        position: absolute;
+        margin-left: 6em;
+        margin-top: 1.5em;
+        display: block;
+        transition: width 0.3s ease;
+    }
+
+    .navBarMenu {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* police de : accueil/ informations/ réservation */
+        font-size: 2.2em; /* taille de police de : accueil/ informations/ réservation */
+    }
+
+    .togglerSidebar {
+        margin-left: 0.8em;
+        margin-top: 0.938em;
+        cursor: pointer;
+        z-index: 1;
+        position: absolute;
+        transition: 0.5s;
+        width: 3.80em;  /* Position en largeur de la case à cocher invisible sidebar  */
+        height: 3em; /* Position en hauteur de la case à cocher insvisible sidebar  */
+        opacity: 0; /* opacité de la case à cocher  invisible*/
+    }
+
+    .togglerSidebar:checked {
+        margin-left: 10.625em; /* position du la case à cocher par rapport à la sidebar */
+        margin-top: 0.938em; /*  Marge en haut de la case à cocher par rapport à la sidebar*/
+        cursor: pointer;
+        z-index: 1;
+        position: absolute;
+        transition: 0.5s;
+    }
+
+    #div1 {
+        width: 100%;
+        align-items: right;
+    }
+
+    #logo1 {
+        height: auto;
+        width: 15vw;
+        padding-left: 0vw;
+        padding-top: 1.7vh;
+        
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
