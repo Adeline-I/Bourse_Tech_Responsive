@@ -23,6 +23,10 @@ p {
     letter-spacing: 0.8px;
 }
 
+#myBtn{
+    color: white;
+}
+
 #textefin{
     font-family: Haettenschweiler;
     letter-spacing: 0.8px;
@@ -95,13 +99,20 @@ a {
 
 .infobar {
     background-color: #231F20;
+    height: 3em;
+    padding-top: 0.5em;
 }
 
 .footerText {
     color: black;
 }
 
-@media screen and (min-width: 960px) {
+
+@media screen and (min-width: 576px) and (max-width: 991px){
+
+}
+
+@media screen and (min-width: 992px) {
     iframe { 
         height: 40vh;
         width: 30vw;
@@ -112,13 +123,11 @@ a {
     .row-first{
         margin-left: 5%;
     }
-}
-
-@media screen and (min-width: 576px){
-    .row-first{
-        margin-left: 5%;
+    .container-fluid{
+        margin-left: 5em;
     }
 }
+
 
 
 /* Fin Contenu */
